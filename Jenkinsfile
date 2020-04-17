@@ -18,7 +18,7 @@ pipeline {
                 echo 'Building..'
                 withMaven(jdk: 'JDK-14', maven: 'Maven3.6.3', tempBinDir: 'D:\\Project-CICD\\temp_binary') {
     // some block
-                build 'pipeline-2'     
+                build 'pipeline-1'     
 }
             }
         }

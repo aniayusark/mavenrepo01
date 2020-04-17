@@ -30,7 +30,7 @@ pipeline {
          stage('Package') {
             steps {
                 echo 'Packing..'
-                sh label: '', script: 'mvn -Dmaven.test.failure.ignore clean package'
+                sh label: '', script: 'mvn clean package'
             }
         }
         stage('Deploy') {
